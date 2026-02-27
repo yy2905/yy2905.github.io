@@ -1,34 +1,62 @@
 body {
   font-family: 'Inter', sans-serif;
   max-width: 760px;
-  margin: 80px auto;
+  margin: 90px auto;
   padding: 0 20px;
-  line-height: 1.7;
+  line-height: 1.8;
   color: #222;
   background-color: #fafafa;
+}
+
+header {
+  margin-bottom: 40px;
 }
 
 h1 {
   font-weight: 600;
   font-size: 32px;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
 }
 
 h2 {
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 13px;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
   color: #888;
   margin-top: 60px;
   margin-bottom: 15px;
 }
 
+p {
+  margin: 8px 0;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
 a {
   color: #111;
   text-decoration: none;
   border-bottom: 1px solid #ccc;
+  transition: 0.2s ease;
 }
 
 a:hover {
   border-bottom: 1px solid #111;
+}
+
+.divider {
+  height: 1px;
+  background: #e5e5e5;
+  margin: 50px 0;
 }
