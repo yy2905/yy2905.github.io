@@ -22,13 +22,13 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  document.addEventListener("click", (e) => {
-    const btn = e.target.closest("[data-view]");
-    if (btn) {
-      e.preventDefault();
-      go(btn.dataset.view);
-    }
-  });
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest("button[data-view], a[data-view]");
+  if (btn) {
+    e.preventDefault();
+    go(btn.dataset.view);
+  }
+});
 
   // ===== Dropdowns =====
   const dropdowns = Array.from(document.querySelectorAll(".dropdown"));
