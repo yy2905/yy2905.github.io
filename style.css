@@ -336,3 +336,86 @@ a:hover{ border-bottom-color: var(--fg); }
   }
   .dropdown.open .dropdown-menu{ display:block; }
 }
+
+/* ===== Teaching timeline ===== */
+.timeline{
+  margin-top: 18px;
+  border-left: 1px solid var(--line);
+  padding-left: 18px;
+}
+
+.t-item{
+  display: grid;
+  grid-template-columns: 120px 18px 1fr;
+  column-gap: 12px;
+  align-items: start;
+  padding: 14px 0;
+  position: relative;
+}
+
+.t-date{
+  color: var(--muted);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  margin-top: 2px;
+}
+
+.t-dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  margin-top: 6px;
+}
+
+.t-content{
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  background: transparent;
+}
+
+.t-title{
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.t-meta{
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Small badge for timeline status */
+.badge{
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.badge.closed{
+  opacity: 0.9;
+}
+
+/* Mobile */
+@media (max-width: 760px){
+  .t-item{
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+    padding-left: 0;
+  }
+  .timeline{
+    border-left: none;
+    padding-left: 0;
+  }
+  .t-dot{ display: none; }
+  .t-date{ font-size: 12px; }
+}
