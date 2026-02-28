@@ -1,33 +1,284 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yinan Yao academic</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Yinan Yao</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <h1>Yinan Yao</h1>
-  <p>yyao1@gradcenter.cuny.edu </p>
-  <p>City University of New York</p>
-  <p>Sociology Department, 365 5th Ave ⋄ New York, NY 10016</p>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#" data-view="home">
+        <span class="brand-name">Yinan Yao</span>
+        <span class="brand-sub">Sociology · Migration · Inequality</span>
+      </a>
 
-  <h2>Studies</h2>
-  <ul>
-    <li>Immigration</li>
-    <li>Social Science Study</li>
-  </ul>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu">Menu</button>
 
-  <h2>PUBLICATIONS</h2>
-  <ul>
-    <li><b>Yao.Y.</b>, et al. "Income Packaging and Social Safety Nets for Low-Income Families with Children
-in East Asia. " <i>In Poverty and Inequality in East Asia</i>.</li>
-  </ul>
+        <div id="navMenu" class="nav-menu">
+          <button class="nav-link" data-view="home">Home</button>
 
-  <h2>Contact</h2>
-  <p>Email: yyao1@gradcenter.cuny.edu</p>
-  <p>GitHub: <a href="https://github.com/yy2905"></a></p>
+          <div class="dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Academic <span class="chev">▾</span>
+            </button>
+            <div class="dropdown-menu">
+              <button class="menu-item" data-view="about">About</button>
+              <button class="menu-item" data-view="research">Research</button>
+              <button class="menu-item" data-view="publications">Publications</button>
+              <a class="menu-item" href="cv.pdf" target="_blank" rel="noreferrer">CV (PDF)</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Teaching <span class="chev">▾</span>
+            </button>
+            <div class="dropdown-menu">
+              <button class="menu-item" data-view="teaching">Courses</button>
+              <button class="menu-item" data-view="resources">Resources</button>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Life <span class="chev">▾</span>
+            </button>
+            <div class="dropdown-menu">
+              <button class="menu-item" data-view="notes">Notes</button>
+              <button class="menu-item" data-view="interests">Interests</button>
+            </div>
+          </div>
+
+          <button class="nav-link" data-view="contact">Contact</button>
+
+          <button class="pill" id="themeToggle" aria-label="Toggle theme">◐</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container main">
+    <!-- HOME -->
+    <section class="view is-active" id="view-home" data-view="home">
+      <div class="hero">
+        <h1 class="title">Hi — I’m Yinan.</h1>
+        <p class="lead">
+          I study how law and state classification shape belonging, mobility, and inequality,
+          with a focus on migration and legal status.
+        </p>
+
+        <div class="cta-row">
+          <button class="btn" data-view="research">Explore Research</button>
+          <button class="btn ghost" data-view="teaching">Teaching</button>
+          <button class="btn ghost" data-view="interests">Life</button>
+        </div>
+
+        <div class="meta">
+          <span>CUNY Graduate Center</span>
+          <span class="dot">·</span>
+          <a href="mailto:yyao1@gradcenter.cuny.edu">yyao1@gradcenter.cuny.edu</a>
+          <span class="dot">·</span>
+          <a href="https://github.com/yy2905" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <div class="card-title">Now</div>
+          <p class="card-text">
+            Building a research agenda around legal status, moral boundaries, and public opinion.
+          </p>
+          <button class="link" data-view="about">Read academic intro →</button>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Featured</div>
+          <p class="card-text">
+            A clean, minimal academic site—plus a private corner for everyday notes and interests.
+          </p>
+          <button class="link" data-view="notes">Open notes →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="view" id="view-about" data-view="about">
+      <h2 class="h2">Academic Introduction</h2>
+      <p class="text">
+        Write 6–10 lines here. Keep it calm, precise, and slightly theoretical.
+        You can include methods, a core puzzle, and what kind of contribution you want to make.
+      </p>
+
+      <div class="divider"></div>
+
+      <div class="accordion">
+        <button class="acc-head" aria-expanded="false">
+          Research questions I’m drawn to <span class="chev">▾</span>
+        </button>
+        <div class="acc-body">
+          <ul class="list">
+            <li>How do legal categories become moral categories?</li>
+            <li>When does “illegality” crowd out other traits in public judgment?</li>
+            <li>How do policies structure trajectories rather than point-in-time outcomes?</li>
+          </ul>
+        </div>
+
+        <button class="acc-head" aria-expanded="false">
+          Methods (in plain language) <span class="chev">▾</span>
+        </button>
+        <div class="acc-body">
+          <ul class="list">
+            <li>Conjoint experiments to observe tradeoffs in preferences.</li>
+            <li>Quantitative analysis for population-level patterns.</li>
+            <li>Qualitative evidence for meaning, mechanism, and process.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section class="view" id="view-research" data-view="research">
+      <h2 class="h2">Research</h2>
+      <p class="text subtle">Click to expand. Keep each entry short: puzzle → method → claim-in-progress.</p>
+
+      <div class="accordion">
+        <button class="acc-head" aria-expanded="false">
+          Working Paper: Preferred Profiles of New Migrants to NYC <span class="chev">▾</span>
+        </button>
+        <div class="acc-body">
+          <p class="text">
+            2–4 sentences. What’s the design (conjoint), what’s the key contribution (centering legal status),
+            and what do you expect to show?
+          </p>
+          <div class="tags">
+            <span class="tag">Conjoint</span>
+            <span class="tag">Legal status</span>
+            <span class="tag">NYC</span>
+          </div>
+        </div>
+
+        <button class="acc-head" aria-expanded="false">
+          Project: Digital root-seeking and identity <span class="chev">▾</span>
+        </button>
+        <div class="acc-body">
+          <p class="text">
+            2–4 sentences. What’s the empirical case, what’s the mechanism, and what’s the theoretical hook?
+          </p>
+          <div class="tags">
+            <span class="tag">Identity</span>
+            <span class="tag">Diaspora</span>
+            <span class="tag">Social media</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="view" id="view-publications" data-view="publications">
+      <h2 class="h2">Publications</h2>
+      <ul class="pubs">
+        <li>
+          <div class="pub-title">Income Packaging and Social Safety Nets for Low-Income Families with Children in East Asia</div>
+          <div class="pub-meta"><strong>Yao, Yinan</strong>, et al. <em>Poverty and Inequality in East Asia.</em></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- TEACHING -->
+    <section class="view" id="view-teaching" data-view="teaching">
+      <h2 class="h2">Teaching</h2>
+      <div class="grid2">
+        <div class="card">
+          <div class="card-title">SOC 1005 · Intro Sociology</div>
+          <p class="card-text">
+            2–3 sentences: your teaching philosophy and what students leave the course with.
+          </p>
+          <button class="link" data-view="resources">Course resources →</button>
+        </div>
+        <div class="card">
+          <div class="card-title">Office hours</div>
+          <p class="card-text">
+            Add your schedule, or keep it private and provide email-only.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESOURCES -->
+    <section class="view" id="view-resources" data-view="resources">
+      <h2 class="h2">Teaching Resources</h2>
+      <p class="text">
+        Put a few links: syllabus PDF, slides folder, assignments, or public notes.
+      </p>
+      <ul class="list">
+        <li><a href="#" onclick="return false;">Sample syllabus (coming soon)</a></li>
+        <li><a href="#" onclick="return false;">Selected slides (coming soon)</a></li>
+      </ul>
+    </section>
+
+    <!-- NOTES -->
+    <section class="view" id="view-notes" data-view="notes">
+      <h2 class="h2">Notes</h2>
+      <p class="text">
+        This is your “quiet corner.” Short entries, not social-media style.
+      </p>
+
+      <div class="accordion">
+        <button class="acc-head" aria-expanded="false">
+          Reading workflow <span class="chev">▾</span>
+        </button>
+        <div class="acc-body">
+          <p class="text">
+            You can describe your Obsidian system, or keep it minimal: “I write concept notes and debate maps.”
+          </p>
+        </div>
+
+        <button class="acc-head" aria-expanded="false">
+          Current interests <span class="chev">▾</span>
+        </button>
+        <div class="acc-body">
+          <ul class="list">
+            <li>Urban walking / flâneur</li>
+            <li>Identity and belonging</li>
+            <li>Methods and explanation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section class="view" id="view-interests" data-view="interests">
+      <h2 class="h2">Daily Interests</h2>
+      <p class="text subtle">
+        Keep it tasteful: 3–8 bullets. “Cold” tone + tiny warmth.
+      </p>
+      <ul class="list">
+        <li>Table tennis</li>
+        <li>Plants / indoor growing</li>
+        <li>City walks</li>
+        <li>Cooking</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="view" id="view-contact" data-view="contact">
+      <h2 class="h2">Contact</h2>
+      <div class="card">
+        <p class="card-text">
+          Email: <a href="mailto:yyao1@gradcenter.cuny.edu">yyao1@gradcenter.cuny.edu</a><br>
+          GitHub: <a href="https://github.com/yy2905" target="_blank" rel="noreferrer">github.com/yy2905</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
