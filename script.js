@@ -82,6 +82,25 @@ document.addEventListener("click", (e) => {
     });
   });
 
+
+  (() => {
+  const marker = document.getElementById("homeScrollMarker");
+  const card = document.getElementById("profileCard");
+  if (!marker || !card) return;
+
+  const io = new IntersectionObserver(
+    (entries) => {
+      // When marker is visible, we're still near the top -> keep card hidden
+      // When marker is NOT visible, user scrolled past -> show card
+      const isMarkerVisible = entries[0]?.isIntersecting;
+      card.classList.toggle("is-visible", !isMarkerVisible);
+    },
+    { root: null, threshold: 0.1 }
+  );
+
+  io.observe(marker);
+})();
+
   // Default view
   go("home");
 })();
