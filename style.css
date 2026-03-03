@@ -419,3 +419,24 @@ a:hover{ border-bottom-color: var(--fg); }
   .t-dot{ display: none; }
   .t-date{ font-size: 12px; }
 }
+
+
+.name-note {
+  font-size: 14px;
+  color: #666;
+  margin-top: -10px;
+  margin-bottom: 18px;
+}
+
+.lead {
+  max-width: 700px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.methods {
+  max-width: 700px;
+  line-height: 1.6;
+  font-size: 16px;
+  margin-top: 12px;
+}
